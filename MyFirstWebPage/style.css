@@ -1,0 +1,49 @@
+body {
+    background-color: #FFC;
+}
+
+h1 {
+    color: #FFC;
+    text-align: center;
+    background-color: #900;
+    border-bottom: 10px solid #B92720;
+}
+
+h2 {
+    color: #FFF;
+    background-color: #039903;
+}
+
+.google-logo {
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+}
+
+.google-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+h3 {
+    color: rgb(158, 147, 147);
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.input-group-radio {
+    margin: 10px;
+    display: block;
+}
+
+button {
+    margin: 10px;
+    display: block;
+}
+
+#main-title {
+    color: red;
+}

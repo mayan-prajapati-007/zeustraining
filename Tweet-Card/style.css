@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    height: 500px;
+    width: 500px;
+    margin: 100px auto;
+}
+
+.main {
+    width: 457px;
+    height: 138px;
+    border: 1px solid #ccc;
+}
+
+.card {
+    display: flex;
+    width: 457px;
+    margin: 4px;
+}
+
+.card-img {
+    width: 130px;
+    height: 130px;
+    background-image: url("images/mayan.jpeg");
+    margin-right: 14px;
+    background-size: cover;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.card-description {
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-button {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.card-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+}
+
+.card-button p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #858991;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
