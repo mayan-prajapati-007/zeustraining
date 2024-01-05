@@ -7,10 +7,10 @@
     <title>My first web page</title>
 </head>
 <body>
-    <h1>My first web page</h1>
-    <h2>What this is</h2>
+    <h1 class="main-heading">My first web page</h1>
+    <h2 class="sub-heading">What this is</h2>
     <p>Welcome to my first webpage. I created this webpage without the assitant of a webpage editor. Just my little text editor and a keen <b>understanding of html.</b></p>
-    <h2>What this is</h2>
+    <h2 class="sub-heading">What this is</h2>
     <ul>
         <li>To learn HTML</li>
         <li>List element</li>
@@ -22,16 +22,16 @@
         </ol>
         <li>Here I have created ordered and unordered list</li>
     </ul>
-    <h2>ZeusLearning.com</h2>
+    <h2 class="sub-heading">ZeusLearning.com</h2>
     <a href="https://zeuslearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
-    <h2>On click of following image navigate to Google.com</h2>
+    <h2 class="sub-heading">On click of following image navigate to Google.com</h2>
     <div class="google-logo">
         <a href="https://google.com" target="_blank">
             <img src="images/google.png" alt="Official Google logo">
         </a>
     </div>
-    <h3>Some random table</h3>
-    <table>
+    <h3 class="nested-sub-heading">Some random table</h3>
+    <table class="random-table">
         <tr>
             <td>Row 1, cell 1</td>
             <td>Row 1, cell 2</td>
@@ -48,7 +48,7 @@
             <td>Row 3, cell 3</td>
         </tr>
     </table>
-    <h3>Some random form</h3>
+    <h3 class="nested-sub-heading">Some random form</h3>
     <p><strong>Note: </strong> It looks the part, but won't do anything</p>
     <p>Name:</p>
     <input type="text" id="name" name="name" placeholder="Your name">
@@ -56,12 +56,14 @@
     <textarea id="comments" name="comments" placeholder="Your comments" rows="3"></textarea>
     <p>Are you:</p>
     
-    <div class="input-group-radio">
-        <input type="radio" name="gender">Male
-    </div>
-    <div class="input-group-radio">
-        <input type="radio"name="gender">Female
-    </div>
-    <button>Submit Query</button>
+    <form id="query-form">
+        <div class="input-group-radio">
+            <input type="radio" name="gender">Male
+        </div>
+        <div class="input-group-radio">
+            <input type="radio"name="gender">Female
+        </div>
+        <button class="submit-btn">Submit Query</button>
+    </form>
 </body>
 </html>
