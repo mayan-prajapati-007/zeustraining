@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4fed3bfa2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo" id="logo-header">
+            <i class="fa-regular fa-lightbulb logo-icon"></i>
+            <p>Quantum</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <h2>Log in with Quantum</h2>
+            </div>
+            <div class="card-body">
+                <form id="login-form">
+                    <div class="input-group-radios">
+                        <div class="input-group-radio">
+                            <input type="radio" id="district" name="school_type" value="district">
+                            <label for="district">District</label>
+                        </div>
+                        <div class="input-group-radio">
+                            <input type="radio" id="indepedent" name="school_type" value="indepedent">
+                            <label for="indepedent">Indepedent school</label>
+                        </div>
+                    </div>
+                    <div class="input-group-dropdown">
+                        <label for="states">State*</label>
+                        <select id="states" name="states">
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Maharastra">Maharastra</option>
+                            <option value="Utter Pradesh">Utter Pradesh</option>
+                        </select>
+                    </div>
+                    <div class="input-group-dropdown">
+                        <label for="districts">District*</label>
+                        <select id="districts" name="districts">
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Himmatnagar">Himmatnagar</option>
+                            <option value="Mehsana">Mehsana</option>
+                        </select>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="text" placeholder="Username/Email ID*">
+                        <p>FORGOT USERNAME?</p>
+                    </div>
+                    <div class="input-group-text">
+                        <div class="password">
+                            <input type="password" placeholder="Password*">
+                            <i class="fa-solid fa-eye" id="viewPassword"></i>
+                        </div>
+                        <p>FORGOT PASSWORD?</p>
+                    </div>
+                    <div class="input-group-remember">
+                        <input type="checkbox" id="rememberMe" name="rememberMe" value="lsRememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                    <div class="input-group-submit">
+                        <button type="submit">LOG IN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom-navbar">
+            <button>About</button>
+            <div class="divider"></div>
+            <button>Contact Us</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div class="logo" id="logo-footer">
+                <i class="fa-regular fa-lightbulb logo-icon"></i>
+                <h4>Quantum</h4>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright-text">
+                <p>Copyright © 2020-2021</p>
+                <p>Zeus Systems Pvt. Ltd.</p>
+                <p>All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    font-size: large;
+    font-weight: bold;
+    min-height:50px;
+    background-color: #1F2834;
+    color: #FFF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.logo-icon {
+    font-size: larger;
+    color: #F9D217;
+}
+
+/* Body */
+.content {
+    flex: 1;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: #222;
+    background-color: #FFF;
+    border-top: 2px solid #3AC7EC;
+}
+
+.card-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+}
+
+.card-header i {
+    color: #1F7A54;
+    font-size: larger;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-body {
+    margin-top: 20px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group-radios {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.input-group-radio {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.input-group-radio input {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    accent-color: #1F7A54;
+}
+
+.input-group-radio label {
+    font-size: medium;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group-dropdown {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.input-group-dropdown label {
+    font-size: small;
+    font-weight: 600;
+    color: #666;
+}
+
+.input-group-dropdown select {
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    font-size: medium;
+    font-weight: 600;
+    color: #222;
+}
+
+.input-group-text {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.input-group-text input {
+    font-family: inherit;
+    font-size: medium;
+    font-weight: 600;
+    color: #666;
+    border: none;
+    border-bottom: 1px solid #CCC;
+}
+
+.input-group-text input::target-text {
+    border: none;
+}
+
+.input-group-text p {
+    margin: 0;
+    font-size: small;
+    font-weight: 600;
+    color: #1F7A54;
+    justify-self: end;
+}
+
+.password {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.password i{
+    text-align: end;
+    border: none;
+    border-bottom: 1px solid #CCC;
+}
+
+#viewPassword {
+    color: #1F7A54;
+}
+
+.input-group-remember {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.input-group-remember input {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    accent-color: #1F7A54;
+}
+
+.input-group-remember label {
+    font-size: medium;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group-submit {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-group-submit button {
+    font-family: inherit;
+    font-size: medium;
+    font-weight: 600;
+    color: #1F2834;
+    background-color: #3FD28B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.bottom-navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-navbar button {
+    font-family: inherit;
+    font-size: medium;
+    font-weight: 600;
+    color: #1F7A54;
+    border: none;
+}
+
+/* Footer */
+.footer {
+    min-height:50px;
+    background-color: #E0E1E1;
+    color: #616161;
+    text-align: center;
+}
+
+#logo-footer {
+    color: #1F2834;
+}
+
+.copyright {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.divider {
+    height: 20px;
+    border-left: 1px solid #616161;
+}
+
+.copyright-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright-text p:nth-child(2) {
+    font-weight: bold;
+}

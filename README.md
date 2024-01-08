@@ -11,3 +11,6 @@ Task 1 files Location: ```/Tweet-card```
 Making a Web page according to given word document  
 Task 2 files Location: ```/MyFirstWebPage```
 
+## Task 3
+Making a Quantum Login Page
+Task 3 files Location: ```/Quantum Login Page```
