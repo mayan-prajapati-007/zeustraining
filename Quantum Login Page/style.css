@@ -7,25 +7,29 @@ body {
     flex-direction: column;
 }
 
+/* Utilities */
+.divider {
+    height: 20px;
+    border-left: 1px solid #616161;
+}
+
+.font-medium-600 {
+    font-size: medium;
+    font-weight: 600;
+}
+
 /* Header */
 .header {
     font-size: large;
     font-weight: bold;
-    min-height:50px;
-    background-color: #1F2834;
-    color: #FFF;
-}
-
-.logo {
+    min-height: 50px;
     display: flex;
     align-items: center;
-    gap: 10px;
     padding-left: 20px;
-}
-
-.logo-icon {
-    font-size: larger;
-    color: #F9D217;
+    background-color: #1F2834;
+    background-image: url('images/header\ pattern\ image.png');
+    background-blend-mode: overlay;
+    color: #FFF;
 }
 
 /* Body */
@@ -95,8 +99,6 @@ body {
 }
 
 .input-group-radio label {
-    font-size: medium;
-    font-weight: 600;
     color: #333;
 }
 
@@ -118,10 +120,15 @@ body {
     padding-bottom: 5px;
     border: none;
     border-bottom: 1px solid #CCC;
-    font-size: medium;
-    font-weight: 600;
     color: #222;
+    appearance: none;
+    background: transparent;
+    background-image: url("icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
 }
+
 
 .input-group-text {
     margin-top: 20px;
@@ -132,15 +139,9 @@ body {
 
 .input-group-text input {
     font-family: inherit;
-    font-size: medium;
-    font-weight: 600;
     color: #666;
     border: none;
     border-bottom: 1px solid #CCC;
-}
-
-.input-group-text input::target-text {
-    border: none;
 }
 
 .input-group-text p {
@@ -154,16 +155,16 @@ body {
 .password {
     display: grid;
     grid-template-columns: 9fr 1fr;
-}
-
-.password i{
-    text-align: end;
-    border: none;
     border-bottom: 1px solid #CCC;
 }
 
-#viewPassword {
-    color: #1F7A54;
+.password input {
+    border: none;
+}
+
+.password img{
+    justify-self: end;
+    border: none;
 }
 
 .input-group-remember {
@@ -181,8 +182,6 @@ body {
 }
 
 .input-group-remember label {
-    font-size: medium;
-    font-weight: 600;
     color: #333;
 }
 
@@ -196,8 +195,6 @@ body {
 
 .input-group-submit button {
     font-family: inherit;
-    font-size: medium;
-    font-weight: 600;
     color: #1F2834;
     background-color: #3FD28B;
     border: none;
@@ -218,8 +215,6 @@ body {
 
 .bottom-navbar button {
     font-family: inherit;
-    font-size: medium;
-    font-weight: 600;
     color: #1F7A54;
     border: none;
 }
@@ -232,21 +227,12 @@ body {
     text-align: center;
 }
 
-#logo-footer {
-    color: #1F2834;
-}
-
 .copyright {
     font-size: small;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.divider {
-    height: 20px;
-    border-left: 1px solid #616161;
 }
 
 .copyright-text {
