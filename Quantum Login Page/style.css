@@ -240,9 +240,6 @@ body {
     background-color: #E0E1E1;
     color: #616161;
     text-align: center;
-}
-
-.copyright {
     font-size: small;
     display: flex;
     justify-content: center;

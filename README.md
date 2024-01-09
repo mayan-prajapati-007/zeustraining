@@ -14,3 +14,7 @@ Task 2 files Location: ```/MyFirstWebPage```
 ## Task 3
 Making a Quantum Login Page
 Task 3 files Location: ```/Quantum Login Page```
+
+## Task 4
+Making a Quantum Dashboard Page
+Task 4 files Location: ```/Quantum Dashboard Page```
