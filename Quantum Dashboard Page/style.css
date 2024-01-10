@@ -57,9 +57,14 @@ body {
     position: relative;
 }
 
-.nav-item.active {
+.nav-item.active, .nav-item:hover {
     color: #FFFFFF;
     border-bottom: 5px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .nav-item.avatar {
@@ -108,6 +113,23 @@ body {
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 50rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav-item-lg {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        min-height: inherit;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+    }
 }
 /* ---------------------------------------------------- */
 
