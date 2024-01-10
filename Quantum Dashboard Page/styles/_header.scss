@@ -1,0 +1,102 @@
+.header {
+    min-height: 50px;
+    @include dFlex(row, space-between, center);
+    padding-left: 20px;
+    background-color: $background-color-1;
+    background-image: url('../images/header\ pattern\ image.png');
+    background-blend-mode: overlay;
+}
+
+.navbar {
+    font: normal normal medium 16px/20px QuickSand;
+    margin: 0;
+    min-height: 50px;
+    color: $text-color-1;
+    @include dFlex(row, none, center);
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    @include dFlex(row, none, center);
+    min-height: inherit;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: $text-color-2;
+    border-bottom: 5px solid $border-color-6;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-item.avatar {
+    width: 30px;
+    min-height: 0;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid $border-color-2;
+}
+
+.avatar-img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.badge {
+    background-color: $background-color-5;
+    color: $text-color-2;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50rem;
+}
+
+.avatar-badge {
+    background-color: $background-color-3;
+    color: $text-color-3;
+    position: absolute;
+    top: -20%;
+    left: 60%;
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav-item-lg {
+        display: none;
+    }
+
+    .hamburger-menu {
+        @include dFlex(row, none, center);
+        min-height: inherit;
+        justify-content: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+    }
+}
