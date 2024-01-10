@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'QuickSand';
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'QuickSand', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+@import "./_utilities";
+
+@import "./_mixins";
+
+@import "./variables";
+
+@import "./_header";
+
+@import "./_content";
+
+@import "./_footer";
+

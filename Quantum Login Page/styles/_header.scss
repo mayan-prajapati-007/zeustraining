@@ -1,0 +1,8 @@
+.header {
+    min-height: 50px;
+    @include dFlex(row, flex-start, center);
+    padding-left: 20px;
+    background-color: $background-color-1;
+    background-image: url('../images/header\ pattern\ image.png');
+    background-blend-mode: overlay;
+}
