@@ -2,3 +2,7 @@
     height: 20px;
     border-left: 1px solid $border-color-1;
 }
+
+.grayscale-img {
+    filter: grayscale(100%);
+}

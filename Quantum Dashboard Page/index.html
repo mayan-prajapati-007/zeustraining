@@ -18,20 +18,49 @@
             <div class="nav-item nav-item-lg">Users</div>
             <div class="nav-item nav-item-lg">Reports</div>
             <div class="nav-item nav-item-lg">Admin</div>
-            <div class="nav-item">
-                <img src="icons/alerts.svg" alt="">
-                <span class="badge">2</span>
+            <div class="nav-item dropdown">
+                <div class="dropbtn">
+                    <img src="icons/alerts.svg" alt="">
+                    <span class="badge" id="alerts"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="alerts-container"></div>
+                    <div class="dropdown-footer">
+                        <div class="dropdown-footer-btn">
+                            Show All
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="nav-item">
-                <img src="icons/announcements.svg" alt="">
-                <span class="badge">1</span>
+            <div class="nav-item dropdown">
+                <div class="dropbtn">
+                    <img src="icons/announcements.svg" alt="">
+                    <span class="badge" id="announcements"></span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="announcements-container"></div>
+                    <div class="dropdown-footer">
+                        <div class="dropdown-footer-btn">
+                            Show All
+                        </div>
+                        <div class="divider"></div>
+                        <div class="dropdown-footer-btn">
+                            Create New
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="nav-item avatar">
                 <img class="avatar-img" src="images/mayan.jpeg" alt="">
                 <span class="avatar-badge">T</span>
             </div>
-            <div class="nav-item hamburger-menu">
-                <img src="icons/hamburger-menu.svg" alt="">
+            <div class="nav-item dropdown hamburger-menu">
+                <div class="dropbtn">
+                    <img src="icons/hamburger-menu.svg" alt="">
+                </div>
+                <div class="dropdown-content">
+
+                </div>
             </div>
         </div>
     </div>
@@ -62,162 +91,7 @@
                 <img src="icons/sort.svg" alt="">
             </div>
         </div>
-        <div class="content-body">
-            <div class="card">
-                <div class="card-details">
-                    <img src="images/imageMask.png" class="card-details-img">
-                    <div class="card-details-decription">
-                        <div class="cdd-title">
-                            <h3>Acceleration</h3>
-                            <img src="icons/favourite.svg" alt="">
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>Physics</p>
-                            <div class="divider"></div>
-                            <p>Grade 7 <span class="green">+2</span></p>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p><span>4</span> Units</p>
-                            <p><span>18</span> Lessons</p>
-                            <p><span>24</span> Topics</p>
-                        </div>
-                        <div class="cdd-dropdown">
-                            <select name="classes">
-                                <option value="Mr. Frank B">Mr. Frank's Class B</option>
-                                <option value="">No Classes</option>
-                                <option value="All Classes">All Classes</option>
-                                <option value="Mr. Frank A">Mr. Frank's Class A</option>
-                            </select>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>50 Students</p>
-                            <div class="divider"></div>
-                            <p>21-Jan-2020 - 21-Aug-2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-navigation">
-                    <img class="nav-link" src="icons/preview.svg" alt="">
-                    <img class="nav-link" src="icons/manage course.svg" alt="">
-                    <img class="nav-link" src="icons/grade submissions.svg" alt="">
-                    <img class="nav-link" src="icons/reports.svg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-details">
-                    <img src="images/imageMask-1.png" class="card-details-img">
-                    <div class="card-details-decription">
-                        <div class="cdd-title">
-                            <h3>Displacement, Velocity and Speed</h3>
-                            <img src="icons/favourite.svg" alt="">
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>Physics 2</p>
-                            <div class="divider"></div>
-                            <p>Grade 6 <span class="green">+3</span></p>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p><span>2</span> Units</p>
-                            <p><span>15</span> Lessons</p>
-                            <p><span>20</span> Topics</p>
-                        </div>
-                        <div class="cdd-dropdown">
-                            <select name="classes">
-                                <option value="">No Classes</option>
-                                <option value="All Classes">All Classes</option>
-                                <option value="Mr. Frank A">Mr. Frank's Class A</option>
-                                <option value="Mr. Frank B">Mr. Frank's Class B</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-navigation">
-                    <img class="nav-link" src="icons/preview.svg" alt="">
-                    <img class="nav-link" src="icons/manage course.svg" alt="">
-                    <img class="nav-link" src="icons/grade submissions.svg" alt="">
-                    <img class="nav-link" src="icons/reports.svg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-details">
-                    <img src="images/imageMask-3.png" class="card-details-img">
-                    <div class="card-details-decription">
-                        <div class="cdd-title">
-                            <h3>Introduction to Biology: Micro organisms and how they affec...</h3>
-                            <img src="icons/favourite.svg" alt="">
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>Biology</p>
-                            <div class="divider"></div>
-                            <p>Grade 4 <span class="green">+1</span></p>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p><span>5</span> Units</p>
-                            <p><span>16</span> Lessons</p>
-                            <p><span>22</span> Topics</p>
-                        </div>
-                        <div class="cdd-dropdown">
-                            <select name="classes">
-                                <option value="All Classes">All Classes</option>
-                                <option value="">No Classes</option>
-                                <option value="Mr. Frank A">Mr. Frank's Class A</option>
-                                <option value="Mr. Frank B">Mr. Frank's Class B</option>
-                            </select>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>300 Students</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-navigation">
-                    <img class="nav-link" src="icons/preview.svg" alt="">
-                    <img class="nav-link" src="icons/manage course.svg" alt="">
-                    <img class="nav-link" src="icons/grade submissions.svg" alt="">
-                    <img class="nav-link" src="icons/reports.svg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <span class="card-badge">Expired</span>
-                <div class="card-details">
-                    <img src="images/imageMask-2.png" class="card-details-img">
-                    <div class="card-details-decription">
-                        <div class="cdd-title">
-                            <h3>Introduction to High School Mathematics</h3>
-                            <img src="icons/favourite.svg" alt="">
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>Mathematics</p>
-                            <div class="divider"></div>
-                            <p>Grade 8 <span class="green">+3</span></p>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p><span>4</span> Units</p>
-                            <p><span>18</span> Lessons</p>
-                            <p><span>24</span> Topics</p>
-                        </div>
-                        <div class="cdd-dropdown">
-                            <select name="classes">
-                                <option value="Mr. Frank A">Mr. Frank's Class A</option>
-                                <option value="">No Classes</option>
-                                <option value="All Classes">All Classes</option>
-                                <option value="Mr. Frank B">Mr. Frank's Class B</option>
-                            </select>
-                        </div>
-                        <div class="cdd-metadata">
-                            <p>44 Students</p>
-                            <div class="divider"></div>
-                            <p>14-Oct-2019 - 20-Oct-2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-navigation">
-                    <img class="nav-link" src="icons/preview.svg" alt="">
-                    <img class="nav-link" src="icons/manage course.svg" alt="">
-                    <img class="nav-link" src="icons/grade submissions.svg" alt="">
-                    <img class="nav-link" src="icons/reports.svg" alt="">
-                </div>
-            </div>
-        </div>
+        <div class="courses-container"></div>
         <div class="bottom-navbar">
             <button>About</button>
             <div class="divider"></div>
@@ -233,7 +107,7 @@
             <p>All rights reserved.</p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

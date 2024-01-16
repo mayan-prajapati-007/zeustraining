@@ -14,7 +14,6 @@
     color: $text-color-1;
     @include dFlex(row, none, center);
     list-style-type: none;
-    text-transform: uppercase;
 }
 
 .nav-item {
@@ -23,13 +22,24 @@
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
+    text-transform: uppercase;
     position: relative;
     cursor: pointer;
 }
 
-.nav-item.active, .nav-item:hover {
+.nav-item.active {
     color: $text-color-2;
     border-bottom: 5px solid $border-color-6;
+}
+
+.nav-item:hover {
+    color: $text-color-2;
+
+    .dropbtn {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
 }
 
 .hamburger-menu {
@@ -99,4 +109,141 @@
         position: relative;
         cursor: pointer;
     }
+}
+
+.dropdown {
+    text-transform: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-5;
+    background-color: #f9f9f9;
+    min-width: 350px;
+    box-shadow: 0px 3px 16px 0px $text-color-4;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.alerts-container, .announcements-container {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.alert, .announcement {
+    @include dFlex(column, none, none);
+    padding: 20px 20px 0px 20px;
+    border-bottom: 1px solid $border-color-4;
+}
+
+.alert-unchecked, .announcement-unchecked {
+    background-color: $background-color-8;
+}
+
+.alert-title, .announcement-title {
+    @include dFlex(row, space-between, none);
+    font-weight: 600;
+    color: $text-color-5;
+    margin-bottom: 0;
+    p {
+        margin: 0;
+    }
+    img{
+        height: 15px;
+        width: 15px;
+    };
+}
+
+.alert-course, .announcement-course {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.announcement-heading {
+    @include dFlex(row, space-between, none);
+    p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        span {
+            color: $text-color-4;
+        }
+    }
+    img {
+        width: 15px;
+        height: 15px;
+        align-self: center;
+    }
+}
+
+.alert-course span, .announcement-course span, .alert-date-time, .announcement-files, .announcement-date-time {
+    color: $text-color-4;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.announcement-desc-container {
+    @include dFlex(row, none, none);
+}
+
+.announcement-files {
+    @include dFlex(row, none, none);
+    img {
+        height: 13px;
+        align-self: center;
+    }
+}
+
+.alert-date-time {
+    align-self: flex-end;
+}
+
+.announcement-date-time {
+    margin-left: auto;
+}
+
+.dropdown-footer {
+    @include dFlex(row, center, center);
+    padding: 10px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-5;
+    box-shadow: 0px -1px 10px $text-color-4;
+}
+
+.dropdown-footer-btn {
+    text-align: center;
+    width: 100%;
+    color: $text-color-7;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    // margin-left: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
