@@ -146,36 +146,45 @@
     display: block;
 }
 
-.alerts-container, .announcements-container {
+.alerts-container,
+.announcements-container {
     height: 500px;
     overflow-y: scroll;
 }
 
-.alert, .announcement {
+.alert,
+.announcement {
     @include dFlex(column, none, none);
     padding: 20px 20px 0px 20px;
     border-bottom: 1px solid $border-color-4;
 }
 
-.alert-unchecked, .announcement-unchecked {
+.alert-unchecked,
+.announcement-unchecked {
     background-color: $background-color-8;
 }
 
-.alert-title, .announcement-title {
+.alert-title,
+.announcement-title {
     @include dFlex(row, space-between, none);
     font-weight: 600;
     color: $text-color-5;
     margin-bottom: 0;
+
     p {
         margin: 0;
     }
-    img{
+
+    img {
         height: 15px;
         width: 15px;
-    };
+    }
+
+    ;
 }
 
-.alert-course, .announcement-course {
+.alert-course,
+.announcement-course {
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
@@ -183,15 +192,18 @@
 
 .announcement-heading {
     @include dFlex(row, space-between, none);
+
     p {
         margin: 0;
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
+
         span {
             color: $text-color-4;
         }
     }
+
     img {
         width: 15px;
         height: 15px;
@@ -199,7 +211,11 @@
     }
 }
 
-.alert-course span, .announcement-course span, .alert-date-time, .announcement-files, .announcement-date-time {
+.alert-course span,
+.announcement-course span,
+.alert-date-time,
+.announcement-files,
+.announcement-date-time {
     color: $text-color-4;
     font-weight: 600;
     font-size: 12px;
@@ -212,6 +228,7 @@
 
 .announcement-files {
     @include dFlex(row, none, none);
+
     img {
         height: 13px;
         align-self: center;
@@ -246,4 +263,122 @@
     // margin-left: 10px;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.dropdown-content-mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-5;
+    background-color: $background-color-3;
+    min-width: 250px;
+    box-shadow: 0px 3px 16px 0px $text-color-4;
+    z-index: 1;
+}
+
+.nav-items-mobile {
+    @include dFlex(column, none, none);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: $text-color-5;
+    background-color: $background-color-3;
+    width: 100%;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.nav-item-mobile {
+    @include dFlex(row, none, center);
+    color: $text-color-7;
+    background-color: $background-color-3;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-item-mobile a {
+    color: inherit;
+}
+
+.hamburger-menu:hover .dropdown-content-mobile {
+    display: block;
+}
+
+
+input[class="toggle"] {
+    display: none;
+}
+
+.wrap-collapsible {
+    @include dFlex(column, none, space-between);
+    color: $text-color-7;
+    background-color: $background-color-3;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.collapsible-toggle {
+    width: 100%;
+}
+
+.lbl-toggle {
+    @include dFlex(row, space-between, center);
+    cursor: pointer;
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        height: 15px;
+        width: 15px;
+        filter: invert(33%) sepia(76%) saturate(366%) hue-rotate(103deg) brightness(101%) contrast(96%);
+    }
+}
+
+.collapsible-content {
+    width: 100%;
+    max-height: 0px;
+    margin-top: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content .content-inner {
+    // background-color: $background-color-9;
+    @include dFlex(column, none, none);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: $text-color-7;
+    // background-color: $background-color-9;
+    width: 100%;
+
+    .nested-nav-item-mobile {
+        @include dFlex(row, none, center);
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 10px 10px 5px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
 }
