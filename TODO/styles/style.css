@@ -1,0 +1,122 @@
+body {
+  height: 100vh;
+  color: #FDF0D1;
+  font-size: large;
+  background-color: #643843;
+  font-family: "Dosis", cursive;
+}
+body:hover {
+  background-color: #FDF0D1;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  width: auto;
+  padding: 10px;
+  border: 5px solid #FDF0D1;
+  color: #FDF0D1;
+  background-color: #643843;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover, button:focus {
+  color: #643843;
+  background-color: #FDF0D1;
+  border: 5px solid #643843;
+}
+
+.todo {
+  border: 5px solid #FDF0D1;
+  width: 75%;
+  min-width: 350px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #643843;
+}
+.todo:hover {
+  background-color: #FDF0D1;
+  border: 5px solid #643843;
+}
+
+.todo-create,
+.todo-list {
+  width: auto;
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid #FDF0D1;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #643843;
+}
+.todo-create:hover,
+.todo-list:hover {
+  background-color: #FDF0D1;
+  border: 5px solid #643843;
+}
+
+.todo-create {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 5px;
+}
+.todo-create input {
+  font-family: inherit;
+  color: #FDF0D1;
+  width: auto;
+  padding: 10px;
+  border: 5px solid #FDF0D1;
+  background-color: #643843;
+}
+.todo-create input:hover, .todo-create input:focus {
+  color: #643843;
+  background-color: #FDF0D1;
+  border: 5px solid #643843;
+}
+.todo-create input,
+.todo-create button {
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+.todo-list li {
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid #FDF0D1;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  list-style: none;
+  color: #FDF0D1;
+  background-color: #643843;
+}
+.todo-list li span {
+  text-transform: capitalize;
+  cursor: default;
+}
+.todo-list li button {
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.todo-list li:hover {
+  background-color: #FDF0D1;
+  border: 5px solid #643843;
+  color: #643843;
+  font-size: larger;
+}/*# sourceMappingURL=style.css.map */

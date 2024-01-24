@@ -14,7 +14,7 @@ submitBtn.addEventListener('click', () => {
 })
 
 ul.addEventListener('click', e => {
-    if(e.target.tagName = 'LI'){
+    if(e.target.tagName === 'BUTTON'){
         e.target.parentElement.remove();
     }
 })

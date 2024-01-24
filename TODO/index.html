@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <input type="text" placeholder="Enter todo task" />
-    <button class="submit">add</button>
-    <ul>
-        <li>task 1 <button>delete</button></li>
-        <li>task 2 <button>delete</button></li>
-        <li>task 3 <button>delete</button></li>
-    </ul>
+    <div class="todo">
+        <div class="todo-create">
+            <input type="text" placeholder="Enter todo task" />
+            <button class="submit">add</button>
+        </div>
+        <ul class="todo-list">
+            <li><span>task 1</span><button>delete</button></li>
+            <li><span>task 2</span><button>delete</button></li>
+            <li><span>task 3</span><button>delete</button></li>
+            <li><span>task 4</span><button>delete</button></li>
+        </ul>
+    </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
